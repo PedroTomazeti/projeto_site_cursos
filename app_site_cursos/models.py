@@ -11,10 +11,10 @@ class Course(models.Model):
         ('120', '120H'),
     )
 
-    name = models.CharField(max_length = 45, null = False)
-    description = models.TextField(max_length = 300, null = True)
-    start_at = models.DateField(null = False)
-    workload = models.CharField(max_length = 3, choices = choices_hour, null = False)
+    name = models.CharField(max_length = 45, blank = False)
+    description = models.TextField(max_length = 300, blank= True)
+    start_at = models.DateField(blank = False)
+    workload = models.CharField(max_length = 3, choices = choices_hour, blank = False)
 
     def __str__(self) -> str:
         return self.name
