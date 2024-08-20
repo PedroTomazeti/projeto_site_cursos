@@ -56,7 +56,7 @@ ROOT_URLCONF = 'projeto_site_cursos.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/"base_templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
