@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita o scroll horizontal */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Fixa o header no topo da página */
+    top: 0;
+    left: 0;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container label,
+.container input,
+.container select,
+.container textarea {
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: left;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura */
+}
+
+textarea {
+    resize: vertical; /* Permite que o textarea seja redimensionado apenas na vertical */
+}
+input[type="submit"] {
+    width: auto;
+    margin-top: 20px;
+}
+
+main {
+    padding: 20px;
+    margin-top: 30px; /* Compensa o header fixo */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
