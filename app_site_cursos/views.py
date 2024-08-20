@@ -6,3 +6,6 @@ def home(request):
 
 def add_cursos(request):
     return render(request, 'cursos/add_cursos.html')
+
+def popup_view(request):
+    return render(request, 'popup/popup_content.html')

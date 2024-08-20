@@ -14,6 +14,7 @@
             <ul>
                 <li><a href="{% url 'app_site_cursos:home' %}">Home</a></li>
                 <li><a href="{% url 'app_site_cursos:add_cursos' %}">Adicionar Cursos</a></li>
+                <li><a href="{% url 'app_users:add_users' %}">Portal do Aluno</a></li>
             </ul>
         </nav>
     </header>
@@ -23,5 +24,7 @@
     <footer>
         <p>© 2024 Meu Site. Todos os direitos reservados.</p>
     </footer>
+     <!-- Adicionando Bootstrap JS e dependências -->
+     <script src="{% static 'js/script.js' %}"></script> <!-- Seu arquivo JS -->
 </body>
 </html>

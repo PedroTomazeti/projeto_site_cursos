@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>AI DUDU</h1>
-</body>
-</html>
+<!-- templates/home.html -->
+{% extends 'global/base.html' %}
+{% block title %}Adicionar Cursos{% endblock %}
+{% block content %}
+<h1>Bem-vindo ao Menu</h1>
+<p>Este é o conteúdo da página.</p>
+
+<div class="container">
+    <h1>Exemplo de Popup</h1>
+    <!-- Botão para abrir o popup -->
+    <button id="openPopup">Abrir Popup</button>
+
+    <!-- Popup -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Título do Popup</h2>
+            <p>Este é o conteúdo do popup. Você pode adicionar qualquer HTML aqui.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
