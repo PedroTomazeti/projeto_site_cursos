@@ -3,7 +3,7 @@
 {% block title %}Adicionar Cursos{% endblock %}
 
 {% block content %}
-<form action="{% url 'home' %}" method="post">
+<form action="{% url 'home' %}" method="post">{% csrf_token %}
     <div style="text-align: center;" class="container">
         <h2>Cadastro de Cursos</h2>
         <label for="nome_curso">Nome do curso:</label>
