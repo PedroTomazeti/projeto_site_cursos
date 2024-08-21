@@ -79,6 +79,7 @@ footer {
 /* style.css */
 .modal {
     display: none; /* Esconde o popup por padrão */
+    text-align: center;
     position: fixed;
     z-index: 1;
     left: 0;
